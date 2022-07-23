@@ -344,6 +344,7 @@ GameObject:
   - component: {fileID: 114444105684648127}
   - component: {fileID: 82932445219224349}
   - component: {fileID: 114453173164862039}
+  - component: {fileID: 1273851452609366}
   m_Layer: 0
   m_Name: FirstPersonWalker_Audio
   m_TagString: Untagged
@@ -351,6 +352,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1273851452609366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273851452609365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 955f1edbd7825b64793b9629677e95e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ceilingAngleLimit: 10
+  ceilingDetectionMethod: 0
+  isInDebugMode: 0
 --- !u!1 &1457343458868127
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,11 +705,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f5e44db14072ea4c964da3b192181c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 7
-  airControlRate: 2
-  jumpSpeed: 10
+  runSpeed: 10
+  walkSpeed: 4
+  airControlRate: 8
+  jumpSpeed: 8
   jumpDuration: 0.2
-  airFriction: 0.5
+  airFriction: 5
   groundFriction: 100
   gravity: 30
   slideGravity: 5
