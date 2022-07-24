@@ -21,6 +21,7 @@ namespace FPSKit
 
     public class StateMachine<T> : MonoBehaviour where T : StateMachine<T>
     {
+        public State<T> StartState;
         State<T> _currentState = null;
         public State<T> CurrentState { get => _currentState; set => _currentState = value; }
         public List<TransitionState<T>> CoreStates = new List<TransitionState<T>>();
@@ -34,7 +35,7 @@ namespace FPSKit
                 t.state.BaseFeature = controller;
             }
 
-            CurrentState = CoreStates[0].state;
+            CurrentState = StartState;
             CurrentState.OnEnter();
         }
 

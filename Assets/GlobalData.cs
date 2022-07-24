@@ -26,6 +26,14 @@ public class GlobalData : MonoBehaviour
     [SerializeField]
     bool _loadGame;
 
+    [SerializeField]
+    bool _showMenu;
+
+    [SerializeField]
+    bool _playGame;
+
+    public bool ShowMenuBool { get => _showMenu; set => _showMenu = value; }
     public bool SaveGameBool { get => _saveGame; set => _saveGame = value; }
     public bool LoadGameBool { get => _loadGame; set => _loadGame = value; }
+    public bool PlayGame { get => _playGame; set => _playGame = value; }
 }

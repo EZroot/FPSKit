@@ -12,8 +12,11 @@ namespace FPSKit
         GameStateMachine _stateMachine;
         [SerializeField]
         GameData _gameData;
+        [SerializeField]
+        GameView _gameView;
 
         public override GameData Data { get => _gameData; set => _gameData = value; }
+        public GameView View { get => _gameView; set => _gameView = value; }
 
 
         //UpdateGameInfoLoader _gameInfoLoader;

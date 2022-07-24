@@ -17,7 +17,10 @@ namespace FPSKit
 
         public override void OnUpdate()
         {
-
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                GlobalData.Instance.ShowMenuBool = true;
+            }
         }
     }
 }
