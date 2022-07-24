@@ -2,11 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using FPSKit;
-using System;
 
-namespace FPSKit
+public class GameStateMachine : StateMachine<GameStateMachine>
 {
-    public abstract class BaseData
-    {
-    }
+
 }

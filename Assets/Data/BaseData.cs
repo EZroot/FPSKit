@@ -2,7 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using FPSKit;
+using System;
 
-public interface IBaseController
+namespace FPSKit
 {
+    public class BaseData : MonoBehaviour
+    {
+    }
 }

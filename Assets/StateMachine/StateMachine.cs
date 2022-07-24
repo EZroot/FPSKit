@@ -25,13 +25,20 @@ namespace FPSKit
         public State<T> CurrentState { get => _currentState; set => _currentState = value; }
         public List<TransitionState<T>> CoreStates = new List<TransitionState<T>>();
 
-        void Start()
+
+        public void InitalizeStates(GameController controller)
         {
+            //need to init game controller
+            foreach (TransitionState<T> t in CoreStates)
+            {
+                t.state.BaseFeature = controller;
+            }
+
             CurrentState = CoreStates[0].state;
             CurrentState.OnEnter();
         }
 
-        void Update()
+        void LateUpdate()
         {
             foreach (TransitionState<T> transition in CoreStates)
             {
