@@ -986,6 +986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1510901441}
   - component: {fileID: 1510901442}
+  - component: {fileID: 1510901443}
   m_Layer: 0
   m_Name: Controllers
   m_TagString: Untagged
@@ -1003,9 +1004,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1899884352}
+  - {fileID: 1845669915}
   m_Father: {fileID: 4122626568834401}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1510901442
 MonoBehaviour:
@@ -1019,6 +1022,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87aaa12653b76224eb981d0b6a72f8c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _data: {fileID: 1899884353}
+  _walkerController: {fileID: 0}
+  _cameraTilt: {fileID: 0}
+--- !u!114 &1510901443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510901440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceedfd2f4064fca4c9023145cefccf30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data: {fileID: 1845669916}
 --- !u!1 &1753268890
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,6 +1144,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1845669914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1845669915}
+  - component: {fileID: 1845669916}
+  m_Layer: 0
+  m_Name: WeaponData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1845669915
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845669914}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1510901441}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1845669916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845669914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27271be301fb2c2428584f984812728a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _outputDamage: 22
+  _fireRate: 0.677
+  _recoilStrength: 0.149
 --- !u!1 &1899884351
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,6 +1199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1899884352}
+  - component: {fileID: 1899884353}
   m_Layer: 0
   m_Name: PlayerData
   m_TagString: Untagged
@@ -1148,13 +1214,28 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899884351}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4122626568834401}
-  m_RootOrder: 2
+  m_Father: {fileID: 1510901441}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1899884353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899884351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52341bd58ace78c41896d8cb452ec017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _walkSpeed: 0
+  _runSpeed: 0
+  _cameraTiltDegree: 0
 --- !u!1 &2006808290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,7 +1583,6 @@ Transform:
   m_Children:
   - {fileID: 4694126100743845}
   - {fileID: 4203332524938289}
-  - {fileID: 1899884352}
   - {fileID: 1510901441}
   m_Father: {fileID: 0}
   m_RootOrder: 1
