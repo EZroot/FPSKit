@@ -2420,7 +2420,7 @@ MonoBehaviour:
   _itemCollection: []
   _walkSpeed: 0
   _runSpeed: 0
-  _cameraTiltDegree: 0
+  _cameraTiltDegree: 8.52
 --- !u!1 &1992848179
 GameObject:
   m_ObjectHideFlags: 0
