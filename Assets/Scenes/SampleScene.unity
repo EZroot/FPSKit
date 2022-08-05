@@ -3321,7 +3321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetPosition: {x: 0.12, y: -0.14, z: 0.3}
-  _smoothAmount: 5
+  _smoothAmount: 4
 --- !u!1 &399082335976221602
 GameObject:
   m_ObjectHideFlags: 0
