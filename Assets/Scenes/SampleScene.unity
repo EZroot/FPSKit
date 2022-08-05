@@ -922,7 +922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97221ffdbfdf0d34e9175dd29d3b661d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerData: {fileID: 1899884353}
+  _playerData: {fileID: 0}
   _pickupLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -1987,7 +1987,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1899884352}
   - {fileID: 1845669915}
   m_Father: {fileID: 4122626568834401}
   m_RootOrder: 2
@@ -2004,7 +2003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87aaa12653b76224eb981d0b6a72f8c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _data: {fileID: 1899884353}
+  _data: {fileID: 0}
   _walkerController: {fileID: 114036293854318195}
   _cameraTilt: {fileID: 1964353309251522}
 --- !u!114 &1510901443
@@ -2311,9 +2310,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1899884352}
   m_Father: {fileID: 1510901441}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1845669916
 MonoBehaviour:
@@ -2327,7 +2327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27271be301fb2c2428584f984812728a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _outputDamage: 22
+  _outputDamage: 749
   _fireRate: 0.677
   _recoilStrength: 0.149
 --- !u!1 &1895323665
@@ -2383,7 +2383,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1899884352}
-  - component: {fileID: 1899884353}
   m_Layer: 0
   m_Name: PlayerData
   m_TagString: Untagged
@@ -2402,25 +2401,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1510901441}
+  m_Father: {fileID: 1845669915}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1899884353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1899884351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52341bd58ace78c41896d8cb452ec017, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _itemCollection: []
-  _walkSpeed: 0
-  _runSpeed: 0
-  _cameraTiltDegree: 8.52
 --- !u!1 &1992848179
 GameObject:
   m_ObjectHideFlags: 0
